@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     name: Hello world action
-    runs-on: linux-x64-spot
+    runs-on: [linux-x64-spot, self-hosted]
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
